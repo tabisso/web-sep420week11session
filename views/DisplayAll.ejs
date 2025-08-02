@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaIlio Menu</title>
+    <style>
+        .menu-item{
+            border: 2px solid darkgoldenrod;
+            padding: 20px;
+            width: 300px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Menu Items</h1>
+    <% for(let item of menuItems) {%>
+    <div class="menu-item">
+        <p>Name:<%= item.name %></p>
+        <p>Description:<%= item.description %></p>
+        <p>Catagory:<%= item.category %></p>
+    </div>
+    <% } %>
+</body>
+</html>
